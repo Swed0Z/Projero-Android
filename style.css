@@ -1,0 +1,110 @@
+@font-face {
+    font-family:'android' ;
+    src: url(./pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+}
+:root{
+--cor1:#c5ebd3;
+--cor2:#83e1ad;
+--cor3:#3ddc84;
+--cor4:#2fa866;
+--cor5:#1a5c57;
+--cor6:#063d1e;
+--fonte-android:'android',cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor1);
+}
+header{
+    background-image: linear-gradient(to top,var(--cor4), var(--cor5),var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px 40px 0 40px;
+    color: white;
+}
+header h1{
+    color: var(--cor3);
+    text-shadow: 2px 2px 0px black;
+}
+header p{
+    font-size: 25px;
+    padding-top: 20px;
+}
+nav{
+    background-color: var(--cor4);
+    padding: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.418);
+}
+nav > a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+nav >a:hover {
+    background-color: #1a5c57;
+}
+main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+}
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+}
+main h2{
+font-family: var(--fonte-android);
+color:var(--cor5) ;
+}
+main p{
+        margin: 15px 0;
+        text-align: justify;
+        text-indent: 15px;
+}
+main img{
+    width: 100%;
+}
+main img.android-pq{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main iframe{
+    width: 100%;
+}
+aside{
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+}
+aside >h3{
+    background-color: var(--cor6);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius:20px 20px 0 0 ;
+}
+aside> ul{
+    list-style-position:inside;
+    columns: 2;
+}
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 7px;
+}
+footer > p{
+    color: white;
+}
